@@ -6,8 +6,11 @@ const { createServer } = require('http');
 // módulo interno de nodejs (built-in module). Un conjunto de funcionalidades que tienes acceso simplemente por haber instalado NodeJS
 const url = require('url');
 
+// queremos importar (requerir) las funcionalidades presentes en el fichero utils.js
+const utils = require('./utils.js');
+const {esPalindromo} = utils; // const esPalindromo = utils.esPalindromo
 
-
+ 
 // Es una dirección IP privada que nos sirve para referirnos a la misma máquina donde se está ejecutando el script
 const hostname = '127.0.0.1';
 // El puerto es una subdivisión lógica de los ordenadores que nos permite comunicarnos con el servidor
@@ -58,8 +61,3 @@ server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-function esPalindromo(palabra) {
-  const normalizada = palabra.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const invertida = normalizada.split('').reverse().join('');
-  return normalizada === invertida;
-}
