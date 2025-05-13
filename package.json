@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-palindromo",
+  "version": "1.0.0",
+  "description": "Queremos crear un servidor que ofrece un servicio que se encarga de comprobar si una palabra es un palíndromo.",
+  "main": "app-express.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omiras/nodejs-palindromo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omiras/nodejs-palindromo/issues"
+  },
+  "homepage": "https://github.com/omiras/nodejs-palindromo#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "is-palindrome": "^0.3.0"
+  }
+}
